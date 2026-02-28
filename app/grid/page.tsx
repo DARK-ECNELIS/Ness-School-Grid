@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react"
 import { drawRosaceGrid, generateAdvanced, generateRosace, handleClick, playCorrection, redraw, validate } from "../libs/tools";
 import { Line, Mode, Point } from "../libs/types/grid";
+import Image from "next/image";
+import Link from "next/link";
 
 const DISPLAY_SIZE = 500
 
@@ -137,6 +139,11 @@ export default function Page() {
           <h3>Niveau : {level}</h3>
           <h3>Temps restant : {timeLeft}s</h3>
         </div>
+
+        <Link className="flex gap-2.5 items-center" href={"/school"}>
+          <Image alt="Ness-Project Logo" className="" src="/school/SchoolTime.png" width={75} height={75} />
+          <h1 className="relative text-7xl z-1">Ness-School</h1>
+        </Link>
 
         <div className="flex flex-col gap-0.5">
           <div>
