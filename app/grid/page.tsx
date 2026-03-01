@@ -119,7 +119,7 @@ export default function Page() {
     if (!isRunning) return
     if (timeLeft <= 0) {
       setIsRunning(false)
-      setMessage("⏰ Temps écoulé !")
+      setMessage("⏰ No Remaining!")
       return
     }
 
@@ -134,10 +134,10 @@ export default function Page() {
     <div className="p-10 flex flex-col">
       <div className="flex justify-between bg-gray-800 p-5 rounded-t">
         <div>
-          <h1>Plateforme Quadrillage</h1>
+          <h1>Grid Platform</h1>
           <h2>Score : {score}</h2>
-          <h3>Niveau : {level}</h3>
-          <h3>Temps restant : {timeLeft}s</h3>
+          <h3>Level : {level}</h3>
+          <h3>Time Remaining : {timeLeft}s</h3>
         </div>
 
         <Link className="flex gap-2.5 items-center" href={"/school"}>
@@ -185,15 +185,15 @@ export default function Page() {
       </div>
 
       <div className="flex justify-between p-2.5 bg-gray-800 rounded-b">
-        <button className="p-2.5 bg-gray-700 rounded-md" onClick={() => validate(expected, userLines, setMessage, setScore, setLevel, level, setIsRunning, isRunning)}>✔️ Vérifier</button>
+        <button className="p-2.5 bg-gray-700 rounded-md" onClick={() => validate(expected, userLines, setMessage, setScore, setLevel, level, setIsRunning, isRunning)}>✔️ Check</button>
         <button className="p-2.5 bg-gray-700 rounded-md" onClick={() => playCorrection(canvasRef.current?.getContext("2d")!, gridSize, CELL, userLines, expected)}>
-          🎬 Correction animée
+          🎬 Animated Correction
         </button>
         <button className="p-2.5 bg-gray-700 rounded-md" onClick={newExercise}>
-          🔁 Recommencer
+          🔁 Restart
         </button>
         <button className="p-2.5 bg-gray-700 rounded-md" onClick={() => setSelectedMode(selectedMode === "click" ? "link" : "click")}>
-          🖱️ Selection Mode: {selectedMode}
+          🖱️ Select Mode: {selectedMode}
         </button>
 
         <div className="relative" onMouseLeave={() => setButtonDopMenu(false)} onMouseEnter={() => setButtonDopMenu(true)}>
