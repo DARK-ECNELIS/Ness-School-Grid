@@ -23,6 +23,8 @@
 
 **Objectif pédagogique**: Entraîner à la reproduction de figures géométriques complexes (convexes, concaves, planes) et à la symétrie des figures (rosaces).
 
+**Aperçus**: Un aperçus du project peut être retrouver à l'adresse suivant https://ness-project.com/school
+
 ---
 
 ## 🚀 Démarrage Rapide
