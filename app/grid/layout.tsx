@@ -14,11 +14,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ness-School Grid",
-  description: "school grid for ness-project",
+  description: "school grid for ness-project.",
+  openGraph: {
+    title: "Ness-School Grid",
+    description: "school grid for ness-project",
+    url: "https://ness-project.com/school",
+    images: [{ url: "https://ness-project.com/school/og-image.png" }],
+    siteName: "Ness-School",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ness-School Grid",
+    description: "school grid for ness-project",
+    images: ["https://ness-project.com/school/og-image.png"],
+  },
 };
 
 export default function RootLayout({
-  children,
+  children, 
 }: Readonly<{
   children: React.ReactNode;
 }>) {
