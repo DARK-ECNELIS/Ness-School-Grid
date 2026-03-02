@@ -1,22 +1,5 @@
-<div class="test">
-  <img src="https://ness-project.com/school/SchoolTime.png" height="80" width="80" >
-  <H1> Ness School Grid
-</div>
-<style>
-  .test {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    text-decoration: none;
-  }
-  H1 {
-    font-size:50px
-  }
-  img {
-    border-radius: 5px;
-  }
-</style>
-
+# <img src="https://ness-project.com/school/SchoolTime.png" height="80" width="80"> Ness School Grid
+  
 ## 📋 Vue d'ensemble
 
 **Ness School Grid** est une application interactive éducative basée sur **Next.js** permettant aux utilisateurs de dessiner des figures géométriques sur une grille. L'application propose un système de gamification avec niveaux, scores et différents modes de difficulté.
